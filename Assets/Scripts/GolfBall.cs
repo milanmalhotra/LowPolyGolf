@@ -7,6 +7,8 @@ public class BallLaunch : MonoBehaviour
     public Rigidbody golfBall;
     public CinemachineVirtualCamera golfShotCamera;
     public CinemachineVirtualCamera thirdPersonCamera;
+    public GameObject golfClub;
+    public Transform flag;
     public float angle = 45f;
     public float power;
     
@@ -32,18 +34,24 @@ public class BallLaunch : MonoBehaviour
                 IncrementPower();
             }
         }
+        
+        // Check if ball has stopped moving, then rotate to flag
+        if (golfBall.velocity.magnitude <= 0.01f) { RotateToFlag(); }
     }
 
-    private void OnCollisionEnter(Collision other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Golfer")
         {
             GameVariables.setHittingPhase(true);
             Animator golferAnimator = other.gameObject.GetComponent<Animator>();
+            
             golferAnimator.SetLayerWeight(1, 0);
             golferAnimator.SetBool("inSetup", true);
+            
             golfShotCamera.gameObject.SetActive(true);
             thirdPersonCamera.gameObject.SetActive(false);
+            golfClub.SetActive(true);
         }
     }
 
@@ -91,5 +99,12 @@ public class BallLaunch : MonoBehaviour
                 _isIncrementing = false;
             }
         }
+    }
+
+    void RotateToFlag()
+    {
+        Vector3 direction = flag.position - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(direction);
+        transform.rotation = rotation;
     }
 }
