@@ -7,11 +7,14 @@ public class BallLaunch : MonoBehaviour
     public Rigidbody golfBall;
     public CinemachineVirtualCamera golfShotCamera;
     public CinemachineVirtualCamera thirdPersonCamera;
+    public CinemachineVirtualCamera golfBallCamera;
     public GameObject golfClub;
+    public GameObject player;
     public Transform flag;
     public float angle = 45f;
     public float power;
-    
+
+    private Animator _golferAnimator;
     private float _maxIncrement = 30f;
     private float _incrementSpeed = 10f;
     private float _decreaseSpeed = 10f;
@@ -19,6 +22,7 @@ public class BallLaunch : MonoBehaviour
     private bool _isDecrementing = false;
     private bool _isReadyToLaunch = false;
     private bool _inHittingPhase;
+    private bool _hasEntered = true;
     
     void Update()
     {
@@ -41,17 +45,20 @@ public class BallLaunch : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Golfer")
+        
+        if (other.gameObject.name == "Golfer" && _hasEntered)
         {
+            
             GameVariables.setHittingPhase(true);
-            Animator golferAnimator = other.gameObject.GetComponent<Animator>();
+            _golferAnimator = other.gameObject.GetComponent<Animator>();
             
-            golferAnimator.SetLayerWeight(1, 0);
-            golferAnimator.SetBool("inSetup", true);
-            
+            _golferAnimator.SetLayerWeight(1, 0);
+            _golferAnimator.SetBool("inSetup", true);
+            CalculateWalkUpStartPos();
             golfShotCamera.gameObject.SetActive(true);
             thirdPersonCamera.gameObject.SetActive(false);
             golfClub.SetActive(true);
+            _hasEntered = false;
         }
     }
 
@@ -74,6 +81,11 @@ public class BallLaunch : MonoBehaviour
 
     void InitiateLaunch()
     {
+        _golferAnimator.SetTrigger("doDrive");
+        
+        // Enable shot tracer and rb position
+        transform.GetChild(0).gameObject.SetActive(true);
+        golfBall.constraints = RigidbodyConstraints.None;
         // Convert angle from degrees to radians
         float radAngle = angle * Mathf.Deg2Rad; 
     
@@ -82,6 +94,8 @@ public class BallLaunch : MonoBehaviour
     
         // Apply force to the golf ball based on direction and power
         golfBall.AddForce(shotDirection * power, ForceMode.Impulse);
+        
+        Invoke("EnableGolfBallCamera", 0.5f);
     }
 
     void IncrementPower()
@@ -106,5 +120,30 @@ public class BallLaunch : MonoBehaviour
         Vector3 direction = flag.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(direction);
         transform.rotation = rotation;
+    }
+
+    void EnableGolfBallCamera()
+    {
+        golfBallCamera.gameObject.SetActive(true);
+        golfShotCamera.gameObject.SetActive(false);
+    }
+
+    // Method calculates where the player should be placed at start of animation based off of ball pos and rotation
+    void CalculateWalkUpStartPos()
+    {
+        float xEndPosOffset = 0.142f;
+        float zEndPosOffset = 0.713f;
+        float xStartPosOffset = 1.46f;
+        float zStartPosOffset = 1.03f;
+        
+        Vector3 playerEndPosition = new Vector3(transform.position.x - xEndPosOffset, transform.position.y, transform.position.z + zEndPosOffset);
+        Vector3 playerStartPosition =
+            new Vector3(playerEndPosition.x - xStartPosOffset, playerEndPosition.y, playerEndPosition.z - zStartPosOffset);
+        
+        Vector3 positionOffset = transform.position - playerEndPosition;
+        Vector3 calculatedStartPosition = playerStartPosition - positionOffset;
+        
+        player.transform.position = calculatedStartPosition;
+        player.transform.rotation = transform.rotation;
     }
 }

@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8016123
 Transform:
   m_ObjectHideFlags: 0
@@ -593,7 +593,7 @@ Transform:
   m_GameObject: {fileID: 422424858}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.9925075, z: 0, w: 0.12218371}
-  m_LocalPosition: {x: 12.845998, y: 3.957, z: 72.73302}
+  m_LocalPosition: {x: 12.845996, y: 3.957, z: 72.73302}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -901,8 +901,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972957745}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
+  m_Mass: 0.9
+  m_Drag: 0.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -935,7 +935,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -956,7 +956,9 @@ MonoBehaviour:
   golfBall: {fileID: 972957747}
   golfShotCamera: {fileID: 1130537040}
   thirdPersonCamera: {fileID: 422424859}
+  golfBallCamera: {fileID: 295004384}
   golfClub: {fileID: 1305672370}
+  player: {fileID: 1381702493}
   flag: {fileID: 121323294}
   angle: 45
   power: 0
@@ -1343,9 +1345,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BindingMode: 4
   m_FollowOffset: {x: -0.95, y: 0.27, z: 0}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0.5
+  m_YDamping: 0.5
+  m_ZDamping: 0.5
   m_AngularDampingMode: 0
   m_PitchDamping: 0
   m_YawDamping: 0
@@ -1598,7 +1600,7 @@ Transform:
   m_GameObject: {fileID: 1842377526}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -1, z: 0, w: -0.0000004768371}
-  m_LocalPosition: {x: 12.845998, y: 3.957, z: 72.73302}
+  m_LocalPosition: {x: 12.845996, y: 3.957, z: 72.73302}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1957,6 +1959,10 @@ PrefabInstance:
     - target: {fileID: 3131670509919079810, guid: fd488956583aef74393536b9dc6869bc, type: 3}
       propertyPath: gravityMultiplier
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3131670509919079810, guid: fd488956583aef74393536b9dc6869bc, type: 3}
+      propertyPath: enableHittingPhase
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3131670509919079810, guid: fd488956583aef74393536b9dc6869bc, type: 3}
       propertyPath: groundLayer.m_Bits
@@ -2368,7 +2374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149203495669472619, guid: fd488956583aef74393536b9dc6869bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.346
+      value: 13.345998
       objectReference: {fileID: 0}
     - target: {fileID: 5149203495669472619, guid: fd488956583aef74393536b9dc6869bc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2442,8 +2448,8 @@ SceneRoots:
   - {fileID: 1842377529}
   - {fileID: 613669005}
   - {fileID: 1255591330}
-  - {fileID: 6297886953429685628}
   - {fileID: 267442866}
+  - {fileID: 6297886953429685628}
   - {fileID: 972957744}
   - {fileID: 422424860}
   - {fileID: 295004385}

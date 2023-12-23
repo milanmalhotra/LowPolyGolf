@@ -5,11 +5,13 @@ public class PlayerController : MonoBehaviour
 {
     [Range(1, 20)]
     public float sensitivity = 1f;
-    
+
+    public bool enableHittingPhase = false;
     private PlayerInput _playerInput;
     private Animator _animator;
     private Vector3 _moveDirection;
-    private float _groundCheckDistance = 1.5f;
+    private Vector3 _startOfAnimPos;
+    private Vector3 _endOfAnimPos;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +20,7 @@ public class PlayerController : MonoBehaviour
         _playerInput = gameObject.GetComponent<PlayerInput>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        GameVariables.setHittingPhase(false);
+        GameVariables.setHittingPhase(enableHittingPhase);
     }
 
     // Update is called once per frame
@@ -31,11 +33,9 @@ public class PlayerController : MonoBehaviour
             Rotate();
         }
     }
-
-    /*
-    * Method handles with movement and animation of player
-    * TODO: make controller not have to hold down left stick click, just on click sets bool to the opposite
-    */
+    
+    // Method handles with movement and animation of player
+    // TODO: make controller not have to hold down left stick click, just on click sets bool to the opposite
     void Move() {
         bool isWalking = _playerInput.actions["Move"].IsInProgress();
         bool isSprinting = _playerInput.actions["Sprint"].IsInProgress();
@@ -64,5 +64,19 @@ public class PlayerController : MonoBehaviour
         float mouseX = lookInput.x;
 
         transform.Rotate(Vector3.up * mouseX * sensitivity / 150);
+    }
+    
+    public void RecordStartPosition()
+    {
+        _startOfAnimPos = transform.position;
+    }
+    
+    public void RecordEndPosition()
+    {
+        _endOfAnimPos = transform.position;
+
+        // Now you have the start and end positions, you can use them as needed
+        Debug.Log("Start Position: " + _startOfAnimPos);
+        Debug.Log("End Position: " + _endOfAnimPos);
     }
 }

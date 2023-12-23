@@ -15,7 +15,7 @@ C:/Users/mnm04/Desktop/Low Poly Game
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51574
+53630
 Successfully changed project path to: C:/Users/mnm04/Desktop/Low Poly Game
 C:/Users/mnm04/Desktop/Low Poly Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/mnm04/Desktop/Low Poly Game
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15168] Host "[IP] 192.168.1.160 [Port] 0 [Flags] 2 [Guid] 2009370922 [EditorId] 2009370922 [Version] 1048832 [Id] WindowsEditor(7,MyPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [13824] Host "[IP] 192.168.1.160 [Port] 0 [Flags] 2 [Guid] 1558975114 [EditorId] 1558975114 [Version] 1048832 [Id] WindowsEditor(7,MyPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [15168] Host "[IP] 192.168.1.160 [Port] 0 [Flags] 2 [Guid] 2009370922 [EditorId] 2009370922 [Version] 1048832 [Id] WindowsEditor(7,MyPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [13824] Host "[IP] 192.168.1.160 [Port] 0 [Flags] 2 [Guid] 1558975114 [EditorId] 1558975114 [Version] 1048832 [Id] WindowsEditor(7,MyPC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
-Refreshing native plugins compatible for Editor in 7.30 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 23.04 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.11f1 (d00248457e15)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56884
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007489 seconds.
-- Loaded All Assemblies, in  0.219 seconds
+Registered in 0.004539 seconds.
+- Loaded All Assemblies, in  0.734 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.149 seconds
-Domain Reload Profiling: 366ms
-	BeginReloadAssembly (71ms)
+- Finished resetting the current domain, in  0.137 seconds
+Domain Reload Profiling: 869ms
+	BeginReloadAssembly (128ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (19ms)
+	RebuildCommonClasses (153ms)
 	RebuildNativeTypeToScriptingClass (6ms)
 	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (82ms)
-		LoadAssemblies (69ms)
+	LoadAllAssembliesAndSetupDomain (408ms)
+		LoadAssemblies (127ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (80ms)
-			TypeCache.Refresh (79ms)
-				TypeCache.ScanAssembly (70ms)
+		AnalyzeDomain (406ms)
+			TypeCache.Refresh (405ms)
+				TypeCache.ScanAssembly (262ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (149ms)
+	FinalizeReload (137ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (114ms)
+		SetupLoadedEditorAssemblies (105ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (5ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (76ms)
-			ProcessInitializeOnLoadMethodAttributes (26ms)
+			ProcessInitializeOnLoadAttributes (66ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,80 +115,113 @@ Domain Reload Profiling: 366ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.501 seconds
-Refreshing native plugins compatible for Editor in 2.17 ms, found 1 plugins.
+- Loaded All Assemblies, in  0.905 seconds
+Refreshing native plugins compatible for Editor in 2.29 ms, found 1 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.562 seconds
-Domain Reload Profiling: 1059ms
-	BeginReloadAssembly (100ms)
+- Finished resetting the current domain, in  0.539 seconds
+Domain Reload Profiling: 1441ms
+	BeginReloadAssembly (95ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (18ms)
+		CreateAndSetChildDomain (15ms)
 	RebuildCommonClasses (18ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (345ms)
-		LoadAssemblies (244ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (759ms)
+		LoadAssemblies (615ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (158ms)
-			TypeCache.Refresh (132ms)
-				TypeCache.ScanAssembly (121ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (562ms)
+		AnalyzeDomain (198ms)
+			TypeCache.Refresh (161ms)
+				TypeCache.ScanAssembly (150ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (539ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (440ms)
+		SetupLoadedEditorAssemblies (421ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (4ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (91ms)
-			ProcessInitializeOnLoadAttributes (311ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (300ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 10.66 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 2.56 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7008 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 245 unused Assets / (13.9 MB). Loaded Objects now: 7373.
-Memory consumption went from 325.0 MB to 311.1 MB.
-Total: 9.554700 ms (FindLiveObjects: 1.094400 ms CreateObjectMapping: 0.316300 ms MarkObjects: 3.707600 ms  DeleteObjects: 4.434800 ms)
+Unloading 245 unused Assets / (14.0 MB). Loaded Objects now: 7373.
+Memory consumption went from 325.1 MB to 311.2 MB.
+Total: 5.582100 ms (FindLiveObjects: 0.429200 ms CreateObjectMapping: 0.106600 ms MarkObjects: 2.628800 ms  DeleteObjects: 2.416700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 610747.954732 seconds.
-  path: Assets/External Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Nature_M/Trees_M/stump-snow.prefab
-  artifactKey: Guid(7b635521465d16948b4b8bd9e17e4b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/External Assets/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Nature_M/Trees_M/stump-snow.prefab using Guid(7b635521465d16948b4b8bd9e17e4b3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4caa055f9a02d228be3d1a26c98a81d5') in 0.147927 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 5.09 ms, found 1 plugins.
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.410 seconds
+Refreshing native plugins compatible for Editor in 2.84 ms, found 1 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.236 seconds
+Domain Reload Profiling: 1642ms
+	BeginReloadAssembly (117ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (244ms)
+		LoadAssemblies (254ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (47ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (32ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1236ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (453ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (118ms)
+			ProcessInitializeOnLoadAttributes (293ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.53 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 136 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 137 unused Assets / (13.9 MB). Loaded Objects now: 7382.
-Memory consumption went from 172.0 MB to 158.1 MB.
-Total: 10.055100 ms (FindLiveObjects: 1.027400 ms CreateObjectMapping: 0.344300 ms MarkObjects: 4.314100 ms  DeleteObjects: 4.368200 ms)
+Unloading 6782 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 184 unused Assets / (14.0 MB). Loaded Objects now: 7388.
+Memory consumption went from 273.9 MB to 259.9 MB.
+Total: 4.876900 ms (FindLiveObjects: 0.468200 ms CreateObjectMapping: 0.096800 ms MarkObjects: 1.881400 ms  DeleteObjects: 2.429700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -206,354 +239,65 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 511.488008 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup 1.fbx
-  artifactKey: Guid(c92ed7fbf1a68a04bb35891ce0bea4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup 1.fbx using Guid(c92ed7fbf1a68a04bb35891ce0bea4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad9903eb18e44665ae50f3f5146f663a') in 0.015728 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 107.512359 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup 1.fbx
-  artifactKey: Guid(c92ed7fbf1a68a04bb35891ce0bea4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup 1.fbx using Guid(c92ed7fbf1a68a04bb35891ce0bea4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2780b9c8bd17a564a5e851d76729c343') in 0.002241 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 59
-========================================================================
-Received Import Request.
-  Time since last request: 470.741935 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0df065cd63ffccb2be1420180b7214d9') in 0.006078 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 58.642717 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup 2.fbx
-  artifactKey: Guid(ce3ed37eec7c49f43bb98ad971e8943f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup 2.fbx using Guid(ce3ed37eec7c49f43bb98ad971e8943f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd4f14b8f5b6bc2dbc6b15610a914a8c') in 0.002732 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 59
-========================================================================
-Received Import Request.
-  Time since last request: 45.239543 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e48902cd164c52098cd340d92d8326d') in 0.010673 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 33.309003 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bce1c05196a3b0f803bbc1d2a24c9bf') in 0.026992 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 261.749081 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b94b66891be05773a267ea4eda9cfc23') in 0.020909 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 20.449572 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65fb13d97c3013db93843cf29e8b82b0') in 0.020677 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 5276.264829 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010d646f51542c6ac7dd3afa0fef773c') in 0.020610 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 16.980717 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c53a0f1bb03c8f1afe20d4b61d56b7') in 0.019570 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 124.018648 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '306d58ef49b8b05635403261beb2fa9d') in 0.020416 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 39.955887 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e08dd06d6c5abc85d2e5ba30061bf0a') in 0.022433 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 52.096618 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad3276459332218ae1f0c5b47c54d050') in 0.022138 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 14.054009 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2131632fe61d317621cc1dcfc7b03c') in 0.022949 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 37.719498 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad64adf790fb429b371a0ec0713571b1') in 0.023165 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 78.536806 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup 2.fbx
-  artifactKey: Guid(99f9b07a2d06cbb40b436eb89da10e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup 2.fbx using Guid(99f9b07a2d06cbb40b436eb89da10e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5296164e23f34e2840c6beeccb5a74d') in 0.003211 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 11.714954 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.fbx
-  artifactKey: Guid(99f9b07a2d06cbb40b436eb89da10e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.fbx using Guid(99f9b07a2d06cbb40b436eb89da10e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac15b550816e43a2282deeece2674df') in 0.003256 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 139.737089 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd1997640be1fb0deb2391d25078060') in 0.022046 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 41.577267 seconds.
-  path: Assets/Animation/Controllers/GolfAnimController.controller
-  artifactKey: Guid(6a8674f9c2f24cb438c440009be8b414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Controllers/GolfAnimController.controller using Guid(6a8674f9c2f24cb438c440009be8b414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1025d803192b350025fa575cb70d2e') in 0.013909 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 214.467755 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '274ab6c521f1080230f937ec33667c7e') in 0.022478 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 99.475668 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a770d5e44f1126237e153f46d19eaf') in 0.020633 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 25.408627 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16dd85b33777c7d000c9a43f0bf021ed') in 0.018987 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 27.869207 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4543981fbdf0ae6b5b1aed3a73951e3') in 0.018975 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 22.450504 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a027d274e28f556b0ee3cc23603ca44c') in 0.019098 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 33.187491 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e690b69888ab0a9e3bad06e6880b6b57') in 0.019192 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 83.683165 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a77675ec2bc8228d611a62bfb7123d') in 0.019557 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 32.484209 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc99202e6fd473e058d4af1605910c55') in 0.019785 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 12.699727 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c553e7696af9fd9a66e3a9841429623') in 0.018287 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 15.062532 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3556ca5852ef7493d0a82c32a5acb1c6') in 0.018913 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 19.622777 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ca3dc77572b2b92e6dd5493d0a76aaa') in 0.019367 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 12.967358 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(68cb05aeea0a1414f890e73fb2f4fb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1764cbe3ec71a4c45bbacb622a710d27') in 0.019160 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 21.094299 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim
-  artifactKey: Guid(56b4ae787cbbe1f46abea29a865e00f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Walkup Shot Setup.anim using Guid(56b4ae787cbbe1f46abea29a865e00f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef266e63eb772f57efbd5215410860b8') in 0.026891 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 7.552552 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(56b4ae787cbbe1f46abea29a865e00f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(56b4ae787cbbe1f46abea29a865e00f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc565e29c83a2d558b529b6efc73125e') in 0.026414 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 259.754324 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(56b4ae787cbbe1f46abea29a865e00f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(56b4ae787cbbe1f46abea29a865e00f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc9151108ecb07e68d03890c2d8c342') in 0.018394 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 41.832428 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop 1.anim
-  artifactKey: Guid(e802e61dc75f4ea41a96d3e7616f2573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop 1.anim using Guid(e802e61dc75f4ea41a96d3e7616f2573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff1adc709d8d99e2bf4e70af5df27ce5') in 0.018132 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 10.759171 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop 1.anim
-  artifactKey: Guid(e802e61dc75f4ea41a96d3e7616f2573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop 1.anim using Guid(e802e61dc75f4ea41a96d3e7616f2573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40be9f574cef80a338c272f1e33b4b73') in 0.018078 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 9.395200 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(56b4ae787cbbe1f46abea29a865e00f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(56b4ae787cbbe1f46abea29a865e00f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff9c1085ca40acbf7991f1bdf0c7cb78') in 0.018347 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 7.077541 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(e802e61dc75f4ea41a96d3e7616f2573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(e802e61dc75f4ea41a96d3e7616f2573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87ebd8a6e938fe68158d5581c6984b32') in 0.016501 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 323.122184 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop.anim
-  artifactKey: Guid(e802e61dc75f4ea41a96d3e7616f2573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop.anim using Guid(e802e61dc75f4ea41a96d3e7616f2573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '685a26f60597ae047f4d812e429c8452') in 0.018098 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 4.624382 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop 1.anim
-  artifactKey: Guid(9b77c3b30695f42448d1e09eefe9fe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop 1.anim using Guid(9b77c3b30695f42448d1e09eefe9fe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db96a1e84c872f6f28127dd026c5438d') in 0.017733 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 152.876875 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop 1.anim
-  artifactKey: Guid(9b77c3b30695f42448d1e09eefe9fe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop 1.anim using Guid(9b77c3b30695f42448d1e09eefe9fe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48986e895f38c22ad7a8a7f2d1fdb352') in 0.016342 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 11.170362 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop 1.anim
-  artifactKey: Guid(9b77c3b30695f42448d1e09eefe9fe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop 1.anim using Guid(9b77c3b30695f42448d1e09eefe9fe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66a6e20f166e10487a8ead2ece6a1c49') in 0.016727 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 19.084821 seconds.
-  path: Assets/Animation/Animations/GolfSwing/Address Loop 1.anim
-  artifactKey: Guid(9b77c3b30695f42448d1e09eefe9fe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animation/Animations/GolfSwing/Address Loop 1.anim using Guid(9b77c3b30695f42448d1e09eefe9fe49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c30615c25bf6f228c4a77b632677b7d2') in 0.016284 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 76.398852 seconds.
-  path: Assets/Scripts/GolfBall.cs
-  artifactKey: Guid(8ddbe7e8aa8637c4c94f01b3334f7b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GolfBall.cs using Guid(8ddbe7e8aa8637c4c94f01b3334f7b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185e28467bd9464a61b68e99beaea0fa') in 0.000461 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.351 seconds
+Refreshing native plugins compatible for Editor in 3.18 ms, found 1 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.977 seconds
+Domain Reload Profiling: 1327ms
+	BeginReloadAssembly (110ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (17ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (196ms)
+		LoadAssemblies (207ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (44ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (30ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (978ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (376ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (96ms)
+			ProcessInitializeOnLoadAttributes (250ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 2.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6782 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 184 unused Assets / (14.0 MB). Loaded Objects now: 7403.
+Memory consumption went from 275.8 MB to 261.8 MB.
+Total: 4.817400 ms (FindLiveObjects: 0.415400 ms CreateObjectMapping: 0.098500 ms MarkObjects: 1.896000 ms  DeleteObjects: 2.406700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
