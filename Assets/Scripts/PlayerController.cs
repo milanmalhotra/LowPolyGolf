@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
     public bool enableHittingPhase = false;
     private PlayerInput _playerInput;
-    private Animator _animator;
+    private static Animator _animator;
     private Vector3 _moveDirection;
     private Vector3 _startOfAnimPos;
     private Vector3 _endOfAnimPos;
@@ -78,5 +78,29 @@ public class PlayerController : MonoBehaviour
         // Now you have the start and end positions, you can use them as needed
         Debug.Log("Start Position: " + _startOfAnimPos);
         Debug.Log("End Position: " + _endOfAnimPos);
+    }
+
+    public static void DisableCharacterAnimator()
+    {
+        _animator.SetLayerWeight(1, 0);
+        _animator.SetBool("isWalking", false);
+        _animator.SetBool("isSprinting", false);
+    }
+
+    public static void EnableCharacterAnimator()
+    {
+        _animator.SetLayerWeight(1, 1);
+    }
+
+    public static void EnableDriveAnimation()
+    {
+        _animator.SetTrigger("doDrive");
+        _animator.SetBool("inSetup", false);
+    }
+
+    public static void EnableSetupAnimation()
+    {
+        DisableCharacterAnimator();
+        _animator.SetBool("inSetup", true);
     }
 }
