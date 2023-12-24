@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Cinemachine;
 using UnityEngine;
 
@@ -48,12 +49,8 @@ public class BallLaunch : MonoBehaviour
         
         if (other.gameObject.name == "Golfer" && _hasEntered)
         {
-            
             GameVariables.setHittingPhase(true);
-            _golferAnimator = other.gameObject.GetComponent<Animator>();
-            
-            _golferAnimator.SetLayerWeight(1, 0);
-            _golferAnimator.SetBool("inSetup", true);
+            PlayerController.EnableSetupAnimation();
             CalculateWalkUpStartPos();
             golfShotCamera.gameObject.SetActive(true);
             thirdPersonCamera.gameObject.SetActive(false);
@@ -81,7 +78,7 @@ public class BallLaunch : MonoBehaviour
 
     void InitiateLaunch()
     {
-        _golferAnimator.SetTrigger("doDrive");
+        PlayerController.EnableDriveAnimation();
         
         // Enable shot tracer and rb position
         transform.GetChild(0).gameObject.SetActive(true);
@@ -91,11 +88,8 @@ public class BallLaunch : MonoBehaviour
     
         // Calculate the shot direction based on angle
         Vector3 shotDirection = new Vector3(Mathf.Cos(radAngle), Mathf.Sin(radAngle), 0f);
-    
-        // Apply force to the golf ball based on direction and power
-        golfBall.AddForce(shotDirection * power, ForceMode.Impulse);
-        
-        Invoke("EnableGolfBallCamera", 0.5f);
+
+        StartCoroutine(LaunchEnumerator(shotDirection));
     }
 
     void IncrementPower()
@@ -145,5 +139,16 @@ public class BallLaunch : MonoBehaviour
         
         player.transform.position = calculatedStartPosition;
         player.transform.rotation = transform.rotation;
+    }
+    
+    IEnumerator LaunchEnumerator(Vector3 shotDirection)
+    {
+        yield return new WaitForSeconds(1.15f);
+        // Apply force to the golf ball based on direction and power
+        golfBall.AddForce(shotDirection * power, ForceMode.Impulse);
+        yield return new WaitForSeconds(0.5f);
+        EnableGolfBallCamera();
+        yield return new WaitForSeconds(1f);
+        PlayerController.EnableCharacterAnimator();
     }
 }
