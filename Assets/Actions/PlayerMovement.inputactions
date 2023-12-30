@@ -9,7 +9,7 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "05e0a1a8-adc2-4627-a298-8e6bb8c3aeb3",
-                    "expectedControlType": "Axis",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -36,6 +36,15 @@
                     "name": "Sprint",
                     "type": "Button",
                     "id": "b838cc93-2e47-4e98-97f3-2eb213b79963",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "test",
+                    "type": "Button",
+                    "id": "8ffcf83f-6566-4234-8296-c77ac7a696fd",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -297,6 +306,105 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Keyboard (Shift + A)",
+                    "id": "3f8c24b8-e683-41cf-bdc4-83d28535cebd",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "ba5cf858-873a-4377-ac1b-7fe181de9d43",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "bc8b0f80-3216-4fd1-88be-86e31f5b59bf",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard (Shift + S)",
+                    "id": "af0bccac-c4cd-4ab1-8e28-f2d1e21acfac",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "a1acbe11-b9d6-45f9-8d27-180c4dcc4504",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "33f4a4a2-92a8-4116-a6d8-8af647a59c83",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard (Shift + D)",
+                    "id": "8f0cdf81-9a4f-4059-a3a4-987326e4ff3e",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "5afc7b6e-b7fa-454b-a598-2eb2dc8e098f",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "a9d47ad9-e57b-4224-834e-53be65f66654",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "Gamepad (Left Stick Up + Press)",
                     "id": "1f973905-eda8-42ab-9462-6f0c862c3784",
                     "path": "OneModifier",
@@ -328,6 +436,17 @@
                     "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "f54f4218-8bbb-43be-aede-56be1feb7973",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "test",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
